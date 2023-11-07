@@ -1,0 +1,15 @@
+h1 {
+  color: teal;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+p {
+  color: #1b7a1b;
+  font: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+button {
+  background-color: skyblue;
+  height: 30px;
+  width: 150px;
+}
