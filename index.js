@@ -5,10 +5,6 @@ app.set('view engine','ejs');
 app.use(express.static('public'))
 
 app.get('/',(req,res)=>{
-    res.send('hello world!');
-})
-
-app.get('/joke',(req,res)=>{
     let url='https://v2.jokeapi.dev/joke/Any'
     https.get(url,(responce)=>{
         let data=''
@@ -33,7 +29,7 @@ if(jokeType=='single'){
     })
 })
 app.post('/joke',(req,res)=>{
-    res.redirect('/joke');
+    res.redirect('/');
 })
 app.listen(process.env.PORT|| 3000,(req,res)=>{
     console.log('app is running on port 3000');
