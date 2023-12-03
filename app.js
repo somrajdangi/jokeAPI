@@ -35,6 +35,6 @@ if(jokeType=='single'){
 app.post('/joke',(req,res)=>{
     res.redirect('/joke');
 })
-app.listen(3000,(req,res)=>{
+app.listen(process.env.PORT|| 3000,(req,res)=>{
     console.log('app is running on port 3000');
 })
